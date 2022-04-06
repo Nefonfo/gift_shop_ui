@@ -1,0 +1,10 @@
+extends ../templates/master.pug
+
+block title
+    title Bienvenido
+    
+block content
+    include ../components/hero.pug
+    .flex.flex-wrap.justify-center.items-center.px-6.py-6
+        each _ in Array(6)
+            include ../components/card.pug
