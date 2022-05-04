@@ -1,0 +1,16 @@
+extends ../templates/master.pug
+include ../components/generic_hero.pug
+block title
+    title Bienvenido
+    
+block content
+    .hero.min-h-screen.bg-error
+        .hero-overlay.bg-opacity-40
+        .hero-content.text-center.text-neutral-content
+            .max-w-md
+                h1.mb-5.text-6xl.font-bold.font-serif ¿Estas Seguro?
+                p.text-2xl.mb-5
+                    | Al borrar la dirección no se puede revertir
+                .flex.justify-evenly
+                    button.btn.btn-primary Cancelar
+                    button.btn.btn-accent Borrar

@@ -1,0 +1,39 @@
+extends ../templates/master.pug
+include ../components/generic_hero.pug
+block title
+    title Bienvenido
+    
+block content
+    +generic_hero('Editar Mi Cuenta', './assets/img/profile_edit_wallpaper.jpg')
+    .w-full.px-4.py-10.flex.flex-wrap.justify-evenly.items-center.bg-secondary-focus(class="md:px-8")
+        .flex.flex-col.items-center.mb-4(class="md:mb-0")
+            .shrink-0
+                img.h-40.w-40.object-cover.rounded-full(src='https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1361&q=80' alt='Current profile photo')
+            label.block.mt-5.transition-all.ease-in-out.duration-300
+                span.sr-only Choose profile photo
+                input.block.w-full.text-sm.text-neutral-content(type='file' class='file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary-content file:text-neutral-content hover:file:bg-neutral-focus')
+
+        .flex.flex-col.justify-center.py-4
+            .form-control
+                label.label
+                    span.label-text Tu Email
+                label.input-group
+                    span Email
+                    input.input.input-bordered.w-full(type='email')
+            .form-control
+                label.label
+                    span.label-text Tu(s) Nombre(s)
+                label.input-group
+                    span Nombre(s)
+                    input.input.input-bordered.w-full(type='text')
+            .form-control
+                label.label
+                    span.label-text Tus Apellidos
+                label.input-group
+                    span Apellidos
+                    input.input.input-bordered.w-full(type='text')
+
+
+        .w-full.flex.justify-center.items-center.mt-6
+            a.mx-4.btn(href="") Cambiar Contraseña
+            button.mx-4.btn.btn-primary Entrar

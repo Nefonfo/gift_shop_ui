@@ -1,0 +1,64 @@
+extends ../templates/master.pug
+include ../components/generic_hero.pug
+block title
+    title Bienvenido
+    
+block content
+    +generic_hero('Editar Dirección', './assets/img/address_edit_wallpaper.jpg')
+    form.w-full.px-4.py-16.flex.flex-wrap.justify-evenly.items-start.bg-secondary-focus(class="md:px-8")
+        .flex.flex-col
+            .form-control
+                label.label
+                    span.label-text Tu Calle*
+                label.input-group
+                    span Calle
+                    input.input.input-bordered.w-full(type='text')
+            .form-control
+                label.label
+                    span.label-text Tu Numero Exterior*
+                label.input-group
+                    span Num Ext
+                    input.input.input-bordered.w-full(type='text')
+            .form-control
+                label.label
+                    span.label-text Tu Numero Interior
+                label.input-group
+                    span Num Int
+                    input.input.input-bordered.w-full(type='text')
+            .form-control
+                label.label
+                    span.label-text Tu Colonia*
+                label.input-group
+                    span Colonia
+                    input.input.input-bordered.w-full(type='text')
+        .flex.flex-col
+            .form-control
+                label.label
+                    span.label-text Tu Delegación/Municipio*
+                label.input-group
+                    span Municipio
+                    input.input.input-bordered.w-full(type='text')
+            .form-control
+                label.label
+                    span.label-text Tu Ciudad*
+                label.input-group
+                    span Ciudad
+                    input.input.input-bordered.w-full(type='text')
+            .form-control
+                label.label
+                    span.label-text Tu Código Postal*
+                label.input-group
+                    span C.P.
+                    input.input.input-bordered.w-full(type='text')
+            .form-control
+                label.label
+                    span.label-text Tu Celular*
+                label.input-group
+                    span Teléfono
+                    input.input.input-bordered.w-full(type='text')
+        .flex.flex-col.mt-4(class="md:mt-0")
+            .form-control.mb-8
+                label.label
+                    span.label-text Notas Adicionales
+                textarea.w-full.textarea.textarea-bordered
+            button.btn.btn-primary(type="submit") Guardar

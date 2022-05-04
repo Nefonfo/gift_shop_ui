@@ -1,0 +1,18 @@
+extends ../templates/master.pug
+include ../components/generic_hero.pug
+block title
+    title Bienvenido
+    
+block content
+    .hero.h-96(style='background-image: url("./assets/img/address_view_wallpaper.jpg");')
+        .hero-overlay.bg-opacity-60
+        .hero-content.text-center.text-neutral-content
+            .max-w-md
+                h1.mb-5.text-5xl.font-serif.font-bold Mis Direcciones
+                a.btn.btn-primary Agregar Dirección
+    .w-full.px-4.py-10.flex.flex-wrap.justify-center.bg-secondary-focus(class="md:px-8")
+        .w-full.flex.flex-wrap.justify-center
+            h1.font-bold.font-serif.text-4xl.text-primary No hay direcciones aún 
+        each _ in Array(6)
+            include ../components/address_view/address_card.pug
+        

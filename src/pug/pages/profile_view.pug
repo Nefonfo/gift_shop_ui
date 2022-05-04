@@ -1,0 +1,22 @@
+extends ../templates/master.pug
+include ../components/generic_hero.pug
+block title
+    title Bienvenido
+    
+block content
+    +generic_hero('Mi Cuenta', './assets/img/profile_wallpaper.jpg')
+    .w-full.px-4.py-24.flex.flex-wrap.justify-center.items-center.bg-secondary-focus(class="md:px-8")
+        h2.text-2xl.font-bold.font-serif.text-center.card-title Bienvenido
+        .w-full.flex.flex-col.justify-center.items-center(class="md:mt-4 md:flex-row")
+            img.w-32.h-32.rounded-full.object-cover.my-4(class="md:my-0" src='https://api.lorem.space/image/face?hash=33791')
+            .flex.flex-wrap.flex-col.ml-0.mt-4(class="md:ml-10 md:mt-0") 
+                .flex.items-center.mb-4
+                    .badge.badge-outline.mr-5 Nombre
+                    h4 Federico Lopez
+                .flex.items-center
+                    .badge.badge-outline.mr-5 Correo
+                    h4 sample@sample.com
+                
+            .flex.flex-wrap.flex-col.ml-0.mt-8(class="md:mt-0 md:ml-10")
+                a.btn.my-2(href="#!") Editar Perfil
+                a.btn.btn-primary.my-2(href="#!") Ver mis direcciones

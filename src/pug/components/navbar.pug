@@ -1,6 +1,16 @@
-.navbar.bg-base-100
+#padalamo-navbar.navbar.bg-transparent.fixed.top-0.left-0.z-10.transition-all.ease-in-out.duration-600(class="md:px-8")
         .flex-1
-            a.btn.btn-ghost.normal-case.text-xl Padalustro
+            .dropdown
+                a.btn.btn-ghost.normal-case.text-xl.rounded-full.border-solid.border-2.border-neutral-content(tabindex='0')
+                    .fa-solid.fa-gift
+                ul.menu.menu-compact.dropdown-content.mt-3.p-2.shadow.bg-base-100.rounded-box.w-52(tabindex='0')
+                    li
+                        a Homepage
+                    li
+                        a Portfolio
+                    li
+                        a About
+            h6.ml-4.font-serif.font-bold Palamo.
         .flex-none
             .dropdown.dropdown-end
                 label.btn.btn-ghost.btn-circle(tabindex='0')

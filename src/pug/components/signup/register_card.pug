@@ -1,0 +1,39 @@
+a.link(href="#register") ¿No estas registrado?
+#register.modal.modal-bottom(class="sm:modal-middle")
+  .modal-box
+    h3.font-bold.text-lg ¿No tienes cuenta?
+    form
+      .py-6
+        .form-control
+          label.label
+            span.label-text Tu Email
+          label.input-group
+            span Email
+            input.input.input-bordered(type='email')
+        .form-control
+          label.label
+            span.label-text Tu(s) Nombre(s)
+          label.input-group
+            span Nombre(s)
+            input.input.input-bordered(type='text')
+        .form-control
+          label.label
+            span.label-text Tus Apellidos
+          label.input-group
+            span Apellidos
+            input.input.input-bordered(type='text')
+        .form-control
+          label.label
+            span.label-text Tu Contraseña
+          label.input-group
+            span Contraseña
+            input.input.input-bordered(type='password')
+        .form-control
+          label.label
+            span.label-text Confirmar Contraseña
+          label.input-group
+            span Contraseña
+            input.input.input-bordered(type='password')
+      .modal-action
+        a.btn(href='#') Cancelar
+        a.btn.btn-primary(href='#') Registrarse

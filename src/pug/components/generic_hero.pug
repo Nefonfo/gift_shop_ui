@@ -1,0 +1,6 @@
+mixin generic_hero(title, image_url)
+    .hero.h-96(style='background-image: url('+image_url+');')
+        .hero-overlay.bg-opacity-60
+        .hero-content.text-center.text-neutral-content
+            .max-w-md
+                h1.mb-5.text-5xl.font-serif.font-bold= title

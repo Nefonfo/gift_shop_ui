@@ -1,0 +1,26 @@
+.relative.top-0.left-0.hero.h-screen(style='background-image: url("./assets/img/signup_wallpaper.jpg");')
+  .hero-overlay.bg-opacity-40
+  .w-full.px-2.text-center.text-neutral-content(class="md:px-12 md:text-left")
+    .flex.w-full
+        form.w-full.card.bg-base-100.shadow-xl(class="md:w-1/2 lg:w-2/5")
+            .card-body
+                h2.card-title Inicia Sesión
+                .py-4(method="post") 
+                  .form-control
+                    label.label
+                      span.label-text Tu Email
+                    label.input-group
+                      span Email
+                      input.input.input-bordered(type='email')
+                    label.label
+                      span.label-text Tu Contraseña
+                    label.input-group
+                      span Contraseña
+                      input.input.input-bordered(type='password')
+                .flex.flex-col.justify-start.text-left.my-2
+                    include ./register_card.pug
+                    a.link(href="") ¿No te acuerdas de tu contraseña? 
+  
+
+                .card-actions.justify-end
+                    button.btn.btn-primary Entrar

@@ -5,7 +5,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 const pages = [
-    'index'
+    'index',
+    'signup',
+    'profile_view',
+    'profile_edit',
+    'address_view',
+    'address_edit',
+    'address_delete'
 ]
 
 const generate_pages = () => {
@@ -29,7 +35,7 @@ module.exports  = {
                 test: /\.(png|jpe?g|gif|svg|webmanifest|ico|xml)$/i,
                 loader: 'file-loader',
                 options: {
-                  name: 'assets/[name].[ext]',
+                  name: 'assets/img/[name].[ext]',
                 },
             },
             {

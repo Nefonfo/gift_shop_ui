@@ -36,6 +36,8 @@
   },
   "dependencies": {
     "daisyui": "^2.13.6",
-    "postcss": "^8.4.12"
+    "postcss": "^8.4.12",
+    "sweetalert2": "^11.4.10",
+    "typed.js": "^2.0.12"
   }
 }
