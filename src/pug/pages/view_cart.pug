@@ -1,0 +1,49 @@
+extends ../templates/master.pug
+include ../components/generic_hero.pug
+block title
+    title Bienvenido
+    
+block content
+    +generic_hero('', './assets/img/profile_edit_wallpaper.jpg')
+    .w-full.flex.flex-wrap.py-16.px-2(class="md:px-10")
+        .w-full.flex.flex-wrap.flex-col.justify-center.py-4.px-6.bg-base-300.shadow-md.rounded-lg(class="md:px-14 md:py-8")
+            h1.text-3xl.font-bold.mb-10 Mi Carrito
+            .flex.flex-wrap.gap-8.items-center.pb-5.pt-5
+                img.h-20.w-20.rounded-full(src="https://api.lorem.space/image/car?w=800&h=200&hash=8B7BCDC2", alt="")
+                h3.grow.font-bold Reloj de Lujo
+                form
+                    button.btn.btn-ghost -
+                    span.mx-3.p-2.font-bold.border-solid.border-2.border-neutral-content.rounded-md 1
+                    button.btn.btn-ghost +
+                span.font-bold.text-sm $ 500.00
+                form
+                    button.btn.btn-ghost
+                        i.fa-solid.fa-xmark
+            .flex.flex-wrap.gap-8.items-center.pb-5.pt-5.border-t.border-neutral-content
+                img.h-20.w-20.rounded-full(src="https://api.lorem.space/image/car?w=800&h=200&hash=8B7BCDC2", alt="")
+                h3.grow.font-bold Reloj de Lujo
+                form
+                    button.btn.btn-ghost -
+                    span.mx-3.p-2.font-bold.border-solid.border-2.border-neutral-content.rounded-md 1
+                    button.btn.btn-ghost +
+                    
+                span.font-bold.text-sm $ 500.00
+                form
+                    button.btn.btn-ghost
+                        i.fa-solid.fa-xmark
+            .flex.flex-wrap.gap-8.items-center.pb-5.pt-5.border-t.border-neutral-content
+                img.h-20.w-20.rounded-full(src="https://api.lorem.space/image/car?w=800&h=200&hash=8B7BCDC2", alt="")
+                h3.grow.font-bold Reloj de Lujo
+                form
+                    button.btn.btn-ghost -
+                    span.mx-3.p-2.font-bold.border-solid.border-2.border-neutral-content.rounded-md 1
+                    button.btn.btn-ghost +
+                span.font-bold.text-sm $ 500.00
+                form
+                    button.btn.btn-ghost
+                        i.fa-solid.fa-xmark
+            .flex.flex-wrap.gap-3.items-center.justify-end.pb-5.pt-5.border-t.border-neutral-content
+                    h1.text-md.font-bold.text-white.uppercase Subtotal
+                    span.text-4xl.font-bold.text-white $500.00
+            .flex.flex-wrap.gap-3.items-center.justify-end.pb-5.pt-5
+                    a.btn.btn-accent Proceder a Checkout

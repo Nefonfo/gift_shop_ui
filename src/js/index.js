@@ -1,6 +1,9 @@
 import Typed from 'typed.js';
 import swal from 'sweetalert2';
 
+import Viewer from 'viewerjs';
+import 'viewerjs/dist/viewer.css';
+
 import '../css/index.css';
 import '../assets/img/index_wallpaper.jpg';
 import '../assets/img/signup_wallpaper.jpg';
@@ -10,10 +13,18 @@ import '../assets/img/address_view_wallpaper.jpg';
 import '../assets/img/address_edit_wallpaper.jpg';
 
 import AdviceStorage from './utils/AdviceStorage';
+import PriceRange from './utils/PriceRange';
 
 window.Swal = swal;
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
+
+    document.querySelectorAll('.viewer-js-gallery').forEach(gallery =>  {
+        new Viewer(gallery);
+    });
+
 
     new AdviceStorage(
         document.querySelector('#cookies'),
@@ -35,6 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
         new Typed(element, options)
     })
 
+    const nav = document.querySelector('#padalamo-navbar');
+    if(document.body.classList.contains('no-scroll-change')){
+        nav.classList.remove('bg-transparent'); 
+        nav.classList.add('bg-base-100');
+    }
+
     document.addEventListener('scroll', (e) => {
         const nav = document.querySelector('#padalamo-navbar');
         if(!document.body.classList.contains('no-scroll-change')){
@@ -45,11 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 nav.classList.add('bg-transparent');
                 nav.classList.remove('bg-base-100'); 
             }
-        } else {
-            nav.classList.add('bg-base-100');
-            nav.classList.remove('bg-transparent'); 
         }
     })
+
+    new PriceRange(10000);
 
 
 });

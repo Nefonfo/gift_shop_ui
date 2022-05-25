@@ -1,0 +1,61 @@
+extends ../templates/master.pug
+include ../components/generic_hero.pug
+
+block title
+    title Productos
+
+block extra_css
+    link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
+
+
+block content
+    +generic_hero('', 'https://api.lorem.space/image/car?w=800&h=200&hash=8B7BCDC2')
+    .container.mt-24.mb-10.flex.flex-wrap.justify-center.flex-row.px-8(class="md:px-auto md:gap-x-6")
+        .flex.flex-wrap.flex-row.gap-y-5(class="md:w-6/12 lg:w-7/12")
+            .carousel.w-full
+                #slide1.carousel-item.relative.w-full.cursor-pointer
+                    img.w-full(src='https://api.lorem.space/image/car?w=800&h=200&hash=8B7BCDC2')
+                    .absolute.flex.justify-between.transform.left-5.right-5(class='-translate-y-1/2 top-1/2')
+                        a.btn.btn-circle(href='#slide4') &#x276E;
+                        a.btn.btn-circle(href='#slide2') &#x276F;
+                #slide2.carousel-item.relative.w-full
+                    img.w-full(src='https://api.lorem.space/image/car?w=800&h=200&hash=500B67FB')
+                    .absolute.flex.justify-between.transform.left-5.right-5(class='-translate-y-1/2 top-1/2')
+                        a.btn.btn-circle(href='#slide1') &#x276E;
+                        a.btn.btn-circle(href='#slide3') &#x276F;
+                #slide3.carousel-item.relative.w-full
+                    img.w-full(src='https://api.lorem.space/image/car?w=800&h=200&hash=A89D0DE6')
+                    .absolute.flex.justify-between.transform.left-5.right-5(class='-translate-y-1/2 top-1/2')
+                        a.btn.btn-circle(href='#slide2') &#x276E;
+                        a.btn.btn-circle(href='#slide4') &#x276F;
+                #slide4.carousel-item.relative.w-full
+                    img.w-full(src='https://api.lorem.space/image/car?w=800&h=200&hash=225E6693')
+                    .absolute.flex.justify-between.transform.left-5.right-5(class='-translate-y-1/2 top-1/2')
+                        a.btn.btn-circle(href='#slide3') &#x276E;
+                        a.btn.btn-circle(href='#slide1') &#x276F;
+
+        .flex.flex-wrap.flex-col(class="md:w-5/12 lg:w-4/12")
+            h1.text-3xl.font-bold(class="md:mt-10 lg:mt-20") Zip Tote Basket
+            h3.text-3xl.mt-4 $140
+            p.my-3.text-xl.mt-6.text-primary-focus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque id sequi eius in non! Officia earum ratione modi quod atque maxime? Suscipit vero neque quae! Nulla molestias repellendus ad libero.
+            button.btn.btn-secondary.btn-lg.flex.flex-wrap.items-center.justify-center.gap-3.mt-3 
+                i.fa-solid.fa-bag-shopping
+                span Comprar
+
+    input#message-modal.modal-toggle(type='checkbox', checked="true")
+    .modal.modal-bottom(class="sm:modal-middle")
+        .modal-box
+            .w-full.flex.justify-center.items-center.py-4
+                img.w-20.h-20.rounded-full(src='https://api.lorem.space/image/car?w=800&h=200&hash=500B67FB')
+            h3.w-full.text-center.font-bold.text-lg 
+                i.fa-solid.fa-circle-check.mr-2
+                | Agregado Exitosamente
+            p.py-4 You&apos;ve been selected for a chance to get one year of subscription to use Wikipedia for free!
+            .modal-action
+                label.btn.w-full(for='message-modal') OK
+
+    
+
+
+block extra_js
+    script(src='https://unpkg.com/swiper/swiper-bundle.min.js')

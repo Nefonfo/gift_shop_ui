@@ -11,7 +11,10 @@ const pages = [
     'profile_edit',
     'address_view',
     'address_edit',
-    'address_delete'
+    'address_delete',
+    'product_list_view',
+    'product_detail',
+    'view_cart',
 ]
 
 const generate_pages = () => {
