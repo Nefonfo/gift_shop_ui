@@ -10,7 +10,7 @@ import '../assets/img/500_magi.gif';
 import '../assets/img/address_edit_wallpaper.jpg';
 import '../assets/img/address_view_wallpaper.jpg';
 import '../assets/img/index_wallpaper.jpg';
-//import '../assets/img/password_reset.webp';
+import '../assets/img/password_reset.jpg';
 import '../assets/img/profile_edit_wallpaper.jpg';
 import '../assets/img/profile_wallpaper.jpg';
 import '../assets/img/signup_wallpaper.jpg';
