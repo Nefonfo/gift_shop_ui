@@ -5,12 +5,15 @@ import Viewer from 'viewerjs';
 import 'viewerjs/dist/viewer.css';
 
 import '../css/index.css';
-import '../assets/img/index_wallpaper.jpg';
-import '../assets/img/signup_wallpaper.jpg';
-import '../assets/img/profile_wallpaper.jpg';
-import '../assets/img/profile_edit_wallpaper.jpg';
-import '../assets/img/address_view_wallpaper.jpg';
+import '../assets/img/404_desert.jpg';
+import '../assets/img/500_magi.gif';
 import '../assets/img/address_edit_wallpaper.jpg';
+import '../assets/img/address_view_wallpaper.jpg';
+import '../assets/img/index_wallpaper.jpg';
+import '../assets/img/password_reset.webp';
+import '../assets/img/profile_edit_wallpaper.jpg';
+import '../assets/img/profile_wallpaper.jpg';
+import '../assets/img/signup_wallpaper.jpg';
 
 import AdviceStorage from './utils/AdviceStorage';
 import PriceRange from './utils/PriceRange';
