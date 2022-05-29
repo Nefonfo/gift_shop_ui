@@ -4,10 +4,6 @@ include ../components/generic_hero.pug
 block title
     title Productos
 
-block extra_css
-    link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
-
-
 block content
     +generic_hero('', 'https://api.lorem.space/image/car?w=800&h=200&hash=8B7BCDC2')
     .container.mt-24.mb-10.flex.flex-wrap.justify-center.flex-row.px-8(class="md:px-auto md:gap-x-6")
@@ -53,9 +49,3 @@ block content
             p.py-4 You&apos;ve been selected for a chance to get one year of subscription to use Wikipedia for free!
             .modal-action
                 label.btn.w-full(for='message-modal') OK
-
-    
-
-
-block extra_js
-    script(src='https://unpkg.com/swiper/swiper-bundle.min.js')

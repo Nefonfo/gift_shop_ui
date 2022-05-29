@@ -1,0 +1,11 @@
+extends ../templates/master.pug
+include ../components/generic_hero.pug
+
+block content
+    .hero.h-screen.bg-cover(style="background-image: url(./assets/img/404_desert.jpg)")
+        .hero-overlay.bg-opacity-60
+        .hero-content.text-center.text-neutral-content
+            .max-w-md
+                h1.text-9xl.font-bold.font-serif.mb-5 404
+                p.text-xl.font-serif.mb-5(class="md:text-2xl") En el desierto podrías encontrar más cosas...
+                a.btn.btn-lg.btn-primary(href="#") ¡Vamos a comprar!

@@ -15,6 +15,15 @@ const pages = [
     'product_list_view',
     'product_detail',
     'view_cart',
+    'generic_page',
+    '404',
+    '500',
+    'password_change',
+    'password_change_done',
+    'password_reset',
+    'password_reset_done',
+    'password_reset_change',
+    'password_reset_change_done'
 ]
 
 const generate_pages = () => {
